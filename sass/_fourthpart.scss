@@ -1,0 +1,21 @@
+@use "custom" as *;
+@use "mixin" as *;
+
+
+.fourpart1{
+    @include indivisual_div(60%);
+    
+    img{
+        width: 10%;
+    }
+    
+}
+
+.fourpart2{
+    @include indivisual_div(40%);
+    
+    img{
+        width: 10%;
+    }
+    
+}

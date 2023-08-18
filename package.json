@@ -1,0 +1,26 @@
+{
+  "name": "busibad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass sass:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hilton-Borah/Busibad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hilton-Borah/Busibad/issues"
+  },
+  "homepage": "https://github.com/Hilton-Borah/Busibad#readme",
+  "devDependencies": {
+    "sass": "^1.66.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

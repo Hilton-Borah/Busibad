@@ -1,0 +1,5 @@
+@use "custom" as *;
+
+@mixin indivisual_div($width){
+    width: $width;
+}

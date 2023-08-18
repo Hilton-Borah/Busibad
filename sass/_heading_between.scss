@@ -1,0 +1,40 @@
+.headingMargin{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-weight: bold;
+    font-size: 35px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        margin-top: 70px;
+        margin-bottom: 40px;
+    }
+    
+}
+
+.card{
+    border-radius: 20px;
+    padding: 20px;
+    width: 23%;
+    margin-top: 50px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 576px) { 
+    
+}
+
+@media (max-width: 768px) {
+ 
+
+}
+
+
+@media (max-width: 992px) { 
+
+ }
