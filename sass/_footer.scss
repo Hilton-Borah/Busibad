@@ -1,0 +1,28 @@
+@use 'custom' as *;
+
+
+.footer{
+    background-color: $footercolor;
+    height: 200px;
+    color: rgb(255, 255, 255);  
+    margin: auto;
+    text-align: center;
+    position: relative;
+    div{
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        width: 150px;
+        @media (max-width: 576px) {
+            left: 35%;
+        }
+    }
+    .roundc{
+        border: 1px solid;
+        border-radius: 100%;
+        padding: 1px;
+        padding-left: 6px;
+        padding-right: 6px;
+        font-size: 12px;
+    }
+}

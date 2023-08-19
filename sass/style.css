@@ -12214,6 +12214,15 @@ textarea.form-control-lg {
   }
 }
 
+.imagereview {
+  width: 10px;
+}
+@media (max-width: 576px) {
+  .imagereview {
+    width: 5px;
+  }
+}
+
 .slidercontainer {
   height: 300px;
   padding: 20px;
@@ -12221,12 +12230,22 @@ textarea.form-control-lg {
   background: #f8fafc;
   border-radius: 30px;
 }
+@media (max-width: 768px) {
+  .slidercontainer {
+    display: none;
+  }
+}
 
 .undercontainer {
   width: 80%;
   margin: auto;
   height: 150px;
   margin-top: -180px;
+}
+@media (max-width: 576px) {
+  .undercontainer {
+    margin-top: 80px;
+  }
 }
 
 .insidecommon {
@@ -12238,4 +12257,63 @@ textarea.form-control-lg {
 }
 .insidecommon p {
   font-size: 13px;
+}
+@media (max-width: 768px) {
+  .insidecommon .commonp {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .insidecommon {
+    width: 100%;
+    height: 270px;
+  }
+}
+@media (max-width: 576px) {
+  .insidecommon {
+    width: 100%;
+    height: 330px;
+    margin-top: 30px;
+  }
+}
+
+.company img {
+  margin-bottom: 10px;
+}
+.company p {
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .company {
+    margin-top: 600px;
+  }
+}
+
+.footer {
+  background-color: black;
+  height: 200px;
+  color: rgb(255, 255, 255);
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+.footer div {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  width: 150px;
+}
+@media (max-width: 576px) {
+  .footer div {
+    left: 35%;
+  }
+}
+.footer .roundc {
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

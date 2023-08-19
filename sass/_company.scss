@@ -1,0 +1,16 @@
+@use 'custom' as *;
+
+
+.company{
+    
+    img{
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-weight: bold;
+    }
+    @media (max-width: 576px) {
+        margin-top: 600px;
+    }
+}
