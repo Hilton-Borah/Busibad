@@ -11993,15 +11993,39 @@ textarea.form-control-lg {
   }
 }
 
-.logowidth {
-  width: 12%;
-}
-
 .flex {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4%;
+  font-weight: bold;
+  margin: auto;
+  color: black;
+}
+@media (max-width: 990px) {
+  .flex {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+.logowidth {
+  width: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .logowidth {
+    width: 30%;
+  }
+}
+@media (max-width: 567px) {
+  .logowidth {
+    width: 40%;
+  }
 }
 
 .solid {
@@ -12054,7 +12078,7 @@ textarea.form-control-lg {
   width: 23%;
   margin-top: 50px;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .card {
     width: 100%;
   }
@@ -12249,11 +12273,14 @@ textarea.form-control-lg {
 }
 
 .insidecommon {
-  height: 250px;
+  height: 270px;
   padding: 30px;
   background-color: white;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.insidecommon .width {
+  width: 100%;
 }
 .insidecommon p {
   font-size: 13px;
@@ -12278,15 +12305,35 @@ textarea.form-control-lg {
   }
 }
 
+.kela {
+  margin-bottom: 20px;
+  height: 30px;
+}
+
 .company img {
+  width: 80px;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .company img {
+    width: 60px;
+  }
 }
 .company p {
   font-weight: bold;
 }
-@media (max-width: 576px) {
-  .company {
-    margin-top: 600px;
+@media (max-width: 768px) {
+  .company p {
+    font-size: 12px;
+  }
+}
+
+.pullit {
+  margin-top: 200px;
+}
+@media (max-width: 990px) {
+  .pullit {
+    margin-top: 1000px;
   }
 }
 
@@ -12316,4 +12363,10 @@ textarea.form-control-lg {
   padding-left: 6px;
   padding-right: 6px;
   font-size: 12px;
+}
+
+.wave {
+  position: absolute;
+  margin-top: -260px;
+  opacity: 0.2;
 }/*# sourceMappingURL=style.css.map */

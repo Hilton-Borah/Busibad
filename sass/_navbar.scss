@@ -1,18 +1,33 @@
 @use 'custom' as *;
 
-@mixin flexBoxes($space) {
+.flex {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:$space ;
+    font-weight: bold;
+    margin: auto;
+    color: black;
+    @media (max-width: 990px) {
+        width: 100%;
+        border: none;
+        outline: none;
+    }
 }
 
 .logowidth{
-    width:12%
-}
+    width:12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    @media (max-width: 768px) {
+        width:30%;
+    }
 
-.flex{
-    @include flexBoxes(4%)
+    @media (max-width: 567px) {
+        width:40%;
+    }
 }
 
 .solid{

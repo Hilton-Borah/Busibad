@@ -8,16 +8,122 @@
     <link href="/sass/style.css" rel="stylesheet">
 
     <style>
+        .logowidth {
+            max-width: 100%;
+            height: auto;
+        }
+
         @media (max-width: 767px) {
-            .order-sm-2 {
-                order: 2;
+            .solid {
+                flex-direction: column;
             }
         }
     </style>
 </head>
 
 <body>
-    <nav class="text-center">
+    <!-- 
+    <a class="navbar-brand" href="#">
+      <img class="p-3" style="width: 12%;" src="https://busibud.com/wp-content/uploads/sites/2/2023/05/busibud-logo1.png" alt="">
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light text">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Nav8</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+    <!-- <nav class="text-center">
+        <div>
+          <img class="p-3" style="width: 12%;" src="https://busibud.com/wp-content/uploads/sites/2/2023/05/busibud-logo1.png"
+            alt="">
+        </div>
+        <div class="flex justify-content-center align-items-center gap-5 border-bottom pb-3">
+          <div>Nav1</div>
+          <div>Nav2</div>
+          <div>Nav3</div>
+          <div>Nav4</div>
+          <div>Nav5</div>
+          <div>Nav6</div>
+          <div>Nav7</div>
+          <div>Nav8</div>
+        </div>
+      </nav> -->
+
+
+    <div>
+        <img class="p-3 logowidth" src="https://busibud.com/wp-content/uploads/sites/2/2023/05/busibud-logo1.png"
+            alt="">
+    </div>
+    <nav class="navbar navbar-expand-lg solid">
+        <button class="navbar-toggler flex justify-content-end align-items-center" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container flex">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto gap-lg-5 gap-md-1">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Nav1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav8</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <nav class="text-center">
         <div>
             <img class="p-3 logowidth" src="https://busibud.com/wp-content/uploads/sites/2/2023/05/busibud-logo1.png"
                 alt="">
@@ -32,7 +138,7 @@
             <div>Nav7</div>
             <div>Nav8</div>
         </div>
-    </nav>
+    </nav> -->
 
     <div class="container d-lg-flex m-auto gap-5">
         <div class="align-items-center width m-auto gap-5 ene">
@@ -47,25 +153,29 @@
         </div>
     </div>
 
-    <div class="headingMargin">
+    <svg xmlns="http://www.w3.org/2000/svg" class="wave" viewBox="0 0 1440 320">
+        <path fill="rgb(240,240,240)" fill-opacity="1" d="M0,32L60,37.3C120,43,240,53,360,90.7C480,128,600,192,720,218.7C840,245,960,235,1080,197.3C1200,160,1320,96,1380,64L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+      </svg>    
+
+    <div class="headingMargin container">
         <p class="headingMargin">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
     </div>
 
     <div class="container d-lg-flex d-sm-grid gap-5 justify-content-center">
-        <div class="sm-col card shadow p-3 mb-5 bg-body-tertiary rounded">
-            <h6>Lorem ipsum dolor sit .</h6>
+        <div class="sm-col card shadow p-4 pt-5 pb-5 mb-5" style="border-radius: 20px;"> 
+            <p class="text-center mb-3 fw-bold">Lorem ipsum dolor sit .</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
                 mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
                 sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
         </div>
-        <div class="sm-col card shadow p-3 mb-5 bg-body-tertiary rounded">
-            <h6>Lorem ipsum dolor sit .</h6>
+        <div class="sm-col card shadow  p-4 pt-5 pb-5 mb-5"  style="border-radius: 20px;">
+            <p class="text-center mb-3 fw-bold">Lorem ipsum dolor sit .</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
                 mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
                 sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
         </div>
-        <div class="sm-col card shadow p-3 mb-5 bg-body-tertiary rounded">
-            <h6>Lorem ipsum dolor sit .</h6>
+        <div class="sm-col card shadow  p-4 pt-5 pb-5 mb-5"  style="border-radius: 20px;">
+            <p class="text-center mb-3 fw-bold">Lorem ipsum dolor sit .</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
                 mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
                 sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
@@ -100,7 +210,7 @@
         </div>
     </div>
 
-    <div class="headingMargin">
+    <div class="headingMargin container">
         <p class="headingMargin">Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
     </div>
 
@@ -154,7 +264,7 @@
         </div>
     </div>
 
-    <div class="headingMargin">
+    <div class="headingMargin container">
         <p class="headingMargin">Lorem ipsum dolor sit amet</p>
     </div>
 
@@ -167,63 +277,14 @@
     </div>
 
     <div class="undercontainer container d-lg-flex d-sm-grid gap-5 justify-content-center">
-        <div class="sm-col insidecommon border">
-            <div>
-                <div class="flex justify-content-start align-items-center gap-5">
-                    <div class="flex justify-content-between align-items-center gap-3">
-                        <img style="width: 40px;" src="./Images/eleven.png" alt="">
-                        <div style="line-height: 5px;" class="mt-3">
-                            <p class="commonp">Jhon Doe</p>
-                            <p class="commonp">CEO</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                    </div>  
-                </div>
-            </div>
-            <h6 class="mt-3">Lorem ipsum dolor sit .</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
-                mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
-                sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
-        </div>
-        <div class="sm-col insidecommon border">
-            <div>
-                <div class="flex justify-content-start align-items-center gap-5">
-                    <div class="flex justify-content-start align-items-center gap-3">
-                        <img style="width: 40px;" src="./Images/thirteen.png" alt="">
-                        <div style="line-height: 5px;" class="mt-3">
-                            <p class="commonp">Amanda green</p>
-                            <p class="commonp">Operations Manager</p>
-                        </div>
-                    </div>
-                    <div>
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                        <img class="imagereview" src="./Images/ten.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <h6 class="mt-3">Lorem ipsum dolor sit .</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
-                mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
-                sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
-        </div>
         <div class="sm-col insidecommon">
-            <div>
-                <div class="flex justify-content-start align-items-center gap-5">
-                    <div class="flex justify-content-start align-items-center gap-3">
-                        <img style="width: 40px;" src="./Images/twelve.png" alt="">
-                        <div style="line-height: 5px;" class="mt-3">
-                            <p class="commonp">Sam Cooper</p>
-                            <p class="commonp">Customer Service Manager</p>
-                        </div>
+            <div class="d-flex justify-content-center align-items-center gap-3 width ">
+                <div class="">
+                    <img src="./Images/eleven.png" alt="">
+                </div>
+                <div class="width"  style="margin-top: 5px;">
+                    <div class="flex justify-content-between align-items-center gap-3  width">
+                        <p>John Doe</p>
                         <div>
                             <img class="imagereview" src="./Images/ten.png" alt="">
                             <img class="imagereview" src="./Images/ten.png" alt="">
@@ -232,6 +293,61 @@
                             <img class="imagereview" src="./Images/ten.png" alt="">
                         </div>
                     </div>
+                    <p>
+                        CEO
+                    </p>
+                </div>
+            </div>
+            <h6 class="mt-3">Lorem ipsum dolor sit .</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
+                mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
+                sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
+        </div>
+        <div class="sm-col insidecommon">
+            <div class="d-flex justify-content-center align-items-center gap-3 width ">
+                <div class="">
+                    <img src="./Images/thirteen.png" alt="">
+                </div>
+                <div class="width"  style="margin-top: 5px;">
+                    <div class="flex justify-content-between align-items-center gap-3  width">
+                        <p>John Doe</p>
+                        <div>
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                        </div>
+                    </div>
+                    <p>
+                        CEO
+                    </p>
+                </div>
+            </div>
+            <h6 class="mt-3">Lorem ipsum dolor sit .</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed commodo est.Pellentesque eu placerat
+                mauris. Etiam ut maximus ante. Suspendisse varius dolor nec bibendum dignissim. Proin in diam a justo
+                sollicitudin mattis eu sagittisnunc. In hac habitasse.</p>
+        </div>
+        <div class="sm-col insidecommon">
+            <div class="d-flex justify-content-center align-items-center gap-3 width ">
+                <div class="">
+                    <img src="./Images/twelve.png" alt="">
+                </div>
+                <div class="width"  style="margin-top: 5px;">
+                    <div class="flex justify-content-between align-items-center gap-3  width">
+                        <p>John Doe</p>
+                        <div>
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                            <img class="imagereview" src="./Images/ten.png" alt="">
+                        </div>
+                    </div>
+                    <p>
+                        CEO
+                    </p>
                 </div>
             </div>
             <h6 class="mt-3">Lorem ipsum dolor sit .</h6>
@@ -241,27 +357,27 @@
         </div>
     </div>
 
-    <div class="headingMargin" style="margin-top: 300px;">
+    <div class="headingMargin container pullit">
         <p class="headingMargin">Lorem ipsum dolor sit amet</p>
     </div>
 
 
     <div class="container flex justify-content-evenly align-items-center gap-5 ">
         <div class="company">
-            <img style="width: 150px;" src="./Images/fifteen.png" alt="">
+            <img src="./Images/fifteen.png" alt="">
             <p>Forms On Fire</p>
         </div>
         <div class="company">
-            <img style="width: 120px;" src="./Images/sixteen.png" alt="">
+            <img src="./Images/sixteen.png" alt="">
             <p>ElectroNeek Studio IDE</p>
         </div>
         <div class="company">
-            <img style="width: 50px;" src="./Images/fourteen.png" alt="">
+            <img src="./Images/fourteen.png" alt="">
             <p>Jot form</p>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" style="color: rgb(255, 255, 255);">
         <div class="flex justify-content-center align-items-center m-auto">
             <p class="roundc">c</p>
             <p>Helplama 2021</p>
