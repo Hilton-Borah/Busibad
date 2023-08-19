@@ -2,10 +2,6 @@
 
 .imagereview {
     width: 10px;
-
-    @media (max-width: 576px) {
-        width: 5px;
-    }
 }
 
 .slidercontainer {
@@ -69,9 +65,4 @@
         margin-top: 30px;
         
     }
-}
-
-.kela{  
-    margin-bottom: 20px;
-    height: 30px;
 }

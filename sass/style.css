@@ -12241,11 +12241,6 @@ textarea.form-control-lg {
 .imagereview {
   width: 10px;
 }
-@media (max-width: 576px) {
-  .imagereview {
-    width: 5px;
-  }
-}
 
 .slidercontainer {
   height: 300px;
@@ -12303,11 +12298,6 @@ textarea.form-control-lg {
     height: 330px;
     margin-top: 30px;
   }
-}
-
-.kela {
-  margin-bottom: 20px;
-  height: 30px;
 }
 
 .company img {
